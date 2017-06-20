@@ -1,0 +1,32 @@
+﻿  Plugin.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(86): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(87): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(104): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(136): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(137): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(138): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(139): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(140): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(160): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(182): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(183): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(217): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getcwd. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\direct.h(91): note: see declaration of 'getcwd'
+c:\users\jacobslab\documents\sphinxplugin\plugin.cpp(231): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10586.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(358): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+Plugin.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library build/debug\TexturePlugin.lib and object build/debug\TexturePlugin.exp
+  TexturePlugin.vcxproj -> C:\Users\JacobsLab\Documents\SphinxPlugin\VisualStudio\build/debug\ASimplePlugin.dll

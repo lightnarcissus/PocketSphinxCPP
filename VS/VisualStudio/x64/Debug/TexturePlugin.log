@@ -1,0 +1,33 @@
+﻿  Plugin.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xlocale(341): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+..\Plugin.cpp(84): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\Plugin.cpp(86): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+..\Plugin.cpp(87): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\Plugin.cpp(104): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+..\Plugin.cpp(136): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+..\Plugin.cpp(137): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\Plugin.cpp(138): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\Plugin.cpp(139): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\Plugin.cpp(140): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\Plugin.cpp(160): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+..\Plugin.cpp(180): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+..\Plugin.cpp(182): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(129): note: see declaration of 'strcpy'
+..\Plugin.cpp(183): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\string.h(90): note: see declaration of 'strcat'
+..\Plugin.cpp(220): warning C4996: 'getcwd': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getcwd. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\direct.h(91): note: see declaration of 'getcwd'
+..\Plugin.cpp(234): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\exception(358): warning C4577: 'noexcept' used with no exception handling mode specified; termination on exception is not guaranteed. Specify /EHsc
+     Creating library C:\Users\JacobsLab\Documents\SphinxPlugin\VisualStudio\x64\Debug\TexturePlugin.lib and object C:\Users\JacobsLab\Documents\SphinxPlugin\VisualStudio\x64\Debug\TexturePlugin.exp
+  TexturePlugin.vcxproj -> C:\Users\JacobsLab\Documents\SphinxPlugin\VisualStudio\x64\Debug\ASimplePlugin.dll
