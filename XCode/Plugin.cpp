@@ -89,7 +89,41 @@ extern "C" char* GetAudioPath()
     strcpy(objChar,audioChar);
     return objChar;
 }
-
+char* createFile(int trialNumber,char* extension)
+{
+    
+    stringstream trialStr;
+    trialStr << trialNumber;
+    
+    string str1=trialStr.str();
+    
+    const char* trialChar=str1.c_str();
+    size_t trialLength=strlen(trialChar);
+    
+    const char* audioChar= audioPath.c_str();
+    //if(audioPath!=NULL)
+    size_t dirLength=strlen(audioChar);
+    
+    char* midbit="_";
+    char* finalBit=extension;
+    
+    //trial length + recall length + "_" + ".wav" (last two bits comprising of the right-most 4 operand
+    size_t totalLength=dirLength+trialLength+4;
+    // printf("Total length %i \n",totalLength);
+    char* fileName=new char[totalLength];
+    //copy the directory path and then concatenate the rest
+    strcpy(fileName,audioChar);
+    strcat(fileName,trialChar);
+    strcat(fileName,finalBit);
+    
+    // printf("Current filename is: %s \n",fileName);
+    //  printf("%i",trialNumber);
+    //   char trial=trialNumber;
+    //const char* recall=(char*)recallNumber;
+    // cout << trialLength;
+    return fileName;
+    
+}
 char* createFile(int trialNumber, int recallNumber,char* extension)
 {
     
@@ -146,15 +180,37 @@ char* readRecallObjectName(char* textFile)
     return objChar;
 }
 
+char* readRecallObjectName(char* textFile, int lineNumber)
+{
+    int currentLine=0;
+    std::ifstream infile(textFile);
+    string objName;
+    string tempString;
+    while(infile >>tempString)
+    {
+        if(currentLine==lineNumber)
+        {
+            objName=tempString;
+        }
+        currentLine++;
+    }
+//    infile >> objName;
+    const char* constStr= objName.c_str();
+    size_t length=strlen(constStr);
+    char* objChar=new char[length];
+    strcpy(objChar,constStr);
+    return objChar;
+}
+
 char* SphinxRun(int trialNumber, int recallNumber,int threshold){
     
     ps_decoder_t *ps;
     cmd_ln_t *config;
     //create filename
-    char* audioFile=createFile(trialNumber, recallNumber,audioExtension);
+    char* audioFile=createFile(trialNumber, audioExtension);
     //   printf("Current File is: %s \n",audioFile);
-    char *currentTextFile= createFile(trialNumber,recallNumber,textExtension);
-    char* currentRecallObject = readRecallObjectName(currentTextFile);
+    char *currentTextFile= createFile(trialNumber,textExtension);
+    char* currentRecallObject = readRecallObjectName(currentTextFile,recallNumber);
     
     stringstream kws_stream;
     kws_stream<<threshold;
@@ -266,6 +322,8 @@ char* SphinxRun(int trialNumber, int recallNumber,int threshold){
         return "Error! File not found";
     }
 }
+
+
 
 int PrintANumber(){
 	return 5;
