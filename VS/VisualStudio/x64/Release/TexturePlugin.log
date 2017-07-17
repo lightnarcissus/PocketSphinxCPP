@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (ASimplePlugin.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     Creating library C:\Users\franco\Documents\GitHub\PocketSphinxCPP\VS\VisualStudio\x64\Release\ASimplePlugin.lib and object C:\Users\franco\Documents\GitHub\PocketSphinxCPP\VS\VisualStudio\x64\Release\ASimplePlugin.exp
+  TexturePlugin.vcxproj -> C:\Users\franco\Documents\GitHub\PocketSphinxCPP\VS\VisualStudio\x64\Release\SphinxPlugin.dll
+  TexturePlugin.vcxproj -> C:\Users\franco\Documents\GitHub\PocketSphinxCPP\VS\VisualStudio\x64\Release\SphinxPlugin.pdb (Full PDB)

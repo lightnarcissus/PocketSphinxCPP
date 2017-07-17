@@ -8,7 +8,6 @@ This is a simple plugin, a bunch of functions that do simple things.
 #endif
 
 //#include "Plugin.h"
-#define MODELDIR "C:\\Users\\JacobsLab\\Desktop\\Pocketsphinx\\pocketsphinx\\models"
 #include "pocketsphinx.h"
 #include <direct.h>
 #include <windows.h>
@@ -278,7 +277,85 @@ char* textExtension = ".txt";
 		}
 		
 	}
+		
+	const EXPORT_API char* SpeechRecognitionLM(char* wavfile,  char* dictfile, char* hmmfile, char* lmfile) {
+
+		ps_decoder_t *ps;
+		cmd_ln_t *config;
+		//create filename
+		
+		FILE *fh;
+		char const *hyp;
+		int16 buf[512];
+		int rv;
+		int32 score;
 	
+		
+		char *argv[12];
+		argv[0] = "-infile";
+		argv[1] = wavfile;
+		argv[2] = "-hmm";
+		argv[3] = hmmfile;
+		argv[4] = "-lm";
+		argv[5] = lmfile;
+		argv[6] = "-logfn";
+		argv[7] = logPath;
+		argv[8] = "-time";
+		argv[9] = "yes";
+		argv[10] = "-dict";
+		argv[11] = dictfile;
+
+		config = cmd_ln_parse_r(NULL, cont_args_def, 12, argv, FALSE);
+		//config = NULL;
+		
+		ps_default_search_args(config);
+		ps = ps_init(config);
+		if (ps == NULL) {
+			cmd_ln_free_r(config);
+			//  return 1;
+		}
+		
+		char cwd[1024];
+		//  FOR THE FILE PATH
+		if (getcwd(cwd, sizeof(cwd)) != NULL)
+			fprintf(stdout, "");
+
+		// E_INFO("%s COMPILED ON: %s, AT: %s\n\n", argv[0], __DATE__, __TIME__);
+
+		//    if (cmd_ln_str_r(config, "-infile") != NULL) {
+		//        // printf("recognize from file");
+		//        // recognize_from_file();
+		//    } else if (cmd_ln_boolean_r(config, "-inmic")) {
+		//        //recognize_from_microphone();
+		//        // printf("recognize from mic");
+		//    }
+		if (wavfile != NULL)
+		{
+			fh = fopen(wavfile, "rb");
+			if (fh == NULL) {
+				fprintf(stderr, "Unable to open input file goforward.raw\n");
+				//   return -1;
+			}
+
+			rv = ps_start_utt(ps);
+
+			while (!feof(fh)) {
+				size_t nsamp;
+				nsamp = fread(buf, 2, 512, fh);
+				rv = ps_process_raw(ps, buf, nsamp, FALSE, FALSE);
+			}
+			rv = ps_end_utt(ps);
+			hyp = ps_get_hyp(ps, &score);
+			fclose(fh);
+			return hyp;
+		}
+		else
+		{
+			return "Error! File not found";
+		}
+		
+	}
+
 	int EXPORT_API PrintANumber() {
 		return 5;
 	}

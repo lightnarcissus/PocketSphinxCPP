@@ -13,7 +13,9 @@ extern "C" {
 	char* readRecallObjectName(char*);
 	char* createFile(int, int, char*);
 	const char* SphinxRun(int, int, int);
-	int EXPORT_API PrintANumber();
-	int EXPORT_APIAddTwoIntegers(int, int);
-	float EXPORT_API AddTwoFloats(float, float);
+	const char* SpeechRecognitionLM(char*, char*, char*, char*);
+	int PrintANumber();
+	int AddTwoIntegers(int, int);
+	float AddTwoFloats(float, float);
+
 }
